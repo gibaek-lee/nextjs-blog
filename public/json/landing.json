@@ -1,0 +1,38 @@
+{
+  "introduce": {
+    "brief": "Love book, physics, code, and beautiful things",
+    "footprints": {
+      "undergraduate": {
+        "team": "physics lab, LENO",
+        "job": ["Simulation code development"],
+        "tech_stack": ["c", "c++"],
+        "period": "1.5 years"
+      },
+      "master": {
+        "team": "physics lab, LPAL",
+        "job": [
+          "Processing and visualizing result data(serveral Terabyte) of PIC(Particle In Cell) simulation",
+          "Develop a code to enhance processing speed via strategy of Devide and conquer with Parallel Python module",
+          "Develop a code for Laser experiment via LabVIEW"
+        ],
+        "tech_stack": [
+          "Ubuntu Linux", "Bash Shell", 
+          "Python", "Parallel Python", "MatPlotLib", "Gnuplot", "Scipy", "Numpy", 
+          "C", "C++",
+          "MATLAB", "LabVIEW"
+        ],
+        "period": "1.5 years"
+      },
+      "intern programmer": {
+        "team": "Netmarble",
+        "job": ["Develop a Android game(상하이) application(logic engine, socket server, visualizing)"],
+        "tech_stack": ["C++", "Cocosx-2D", "Java(Android)"],
+        "period": "3 months"
+      }
+    },
+    "link": {
+      "linkedin": "https://www.linkedin.com/in/gibaeklee/",
+      "github": "https://github.com/gibaek-lee"
+    }
+  }
+}

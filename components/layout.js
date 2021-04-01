@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Mode from '../components/mode'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 
-const name = 'GiBi'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'GiBi.log'
+export const siteTitle = 'GiBi.log'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <Mode />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,23 +26,23 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <>
         {home ? (
-          <>
+          <header className={styles.header}>
             <img
-              src="/images/profile.jpg"
+              src="/images/profile_gibi-min.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
+          </header>
         ) : (
-          <>
+          <header className={styles.headerPost}>
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  src="/images/profile_gibi-min.jpg"
+                  className={`${styles.headerPostImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
               </a>
@@ -50,9 +52,9 @@ export default function Layout({ children, home }) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
-          </>
+          </header>
         )}
-      </header>
+      </>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

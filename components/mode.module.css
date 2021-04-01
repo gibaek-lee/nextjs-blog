@@ -1,0 +1,26 @@
+.wrapper {
+  position: absolute; 
+  top: 0; 
+  right: 0;
+}
+
+.itemSquare {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 42px; 
+  height: 24px; 
+  border: 3px solid #d1d5da;
+}
+
+.itemRound {
+  position: absolute; 
+  top: -2px; 
+  left: -6px; 
+  width: 28px; 
+  height: 28px; 
+  border-radius: 50%; 
+  background-color: #2f363d;
+  transition: transform .3s cubic-bezier(0.4, 0.03, 0, 1);
+  cursor: pointer;
+}
